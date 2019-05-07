@@ -131,7 +131,7 @@ class Map extends Component {
           onClick={this.handleMapClick}
           mapStyle="mapbox://styles/mapbox/basic-v9"
           mapboxApiAccessToken={
-            "pk.eyJ1IjoiZmVybmFuZG9wYXNjb2FsIiwiYSI6ImNqdjlwcjRwazE0ZW80M3FwNTk1bjF6Y2gifQ.RqfNioOVkzNLNuKTPDnNow"
+            process.env.MAP_API_KEY
           }
           onViewportChange={viewport => this.setState({ viewport })}
         >
