@@ -29,8 +29,6 @@ class Map extends Component {
   };
 
   componentDidMount() {
-    console.log(process.env.MAP_API_KEY);
-
     toast.configure({
       autoClose: 8000,
       draggable: false
@@ -111,7 +109,7 @@ class Map extends Component {
         <UsersList />
         <Form onSubmit={this.handleAddUser} formOpen={this.state.formOpen}>
           <div className="content">
-            <label>Adicionar novo usuario</label>
+            <label>Digite o nome do usuário do Github</label>
             <input
               type="text"
               placeholder="Usuario do github"
